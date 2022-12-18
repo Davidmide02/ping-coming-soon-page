@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here]([https://your-solution-url.com](https://github.com/Davidmide02/ping-coming-soon-page.git))
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site URL here](https://davidmide02.github.io/ping-coming-soon-page/)
 
 ## My process
 
