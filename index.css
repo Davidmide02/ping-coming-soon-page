@@ -30,29 +30,20 @@
 
 body {
 
-    margin: 2rem auto;
-    width: 80%;
+    margin: 2rem;
     box-sizing: border-box;
     font-size: 20px;
-    font-family: 'Libre Franklin', sans-serif;
-
 }
 
 header {
     text-align: center;
 }
 
-
-
-main {
-
-    margin-top: 2rem;
-}
-
 .first-section {
-    
-    color: green;
+
     text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 
@@ -79,55 +70,57 @@ main p {
     width: 100%;
 }
 
-main form {
-    
+ form {
+
     display: flex;
-    width: 70%;
-    margin:1rem auto;
-   justify-content: center; 
+    justify-content: center;
     align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
     
+
 }
 
 
 .control {
     width: 50%;
-
+    position: relative;
+    margin-right: 1rem;
 }
 
-main form #notify-input {
+form #notify-input {
 
-    
+
     background: transparent;
     border: 2px solid var(--PaleBlue);
     border-radius: 2rem;
-    padding: 0.5rem 6rem 0.5rem 1rem;
+    padding: 1.5rem;
     outline: none;
-   font-weight: 700 ;
-    
+    font-weight: 700;
+    width: 100%;
+    font-size: 1.2rem;
+
 }
 
 main form #notify-input:hover {
     border: 2px solid var(--very_dark_blue);
-   
+
 }
 
 
-
-main form .balance {
-    margin-top: -1rem;
-    margin-bottom: 0.4rem;
-}
 
 
 main form #notify-btn {
     background: var(--blue);
     border: none;
+    font-size: 1.2rem;
     border-radius: 2rem;
-    padding: 0.5rem 3.5rem;
+    padding: 1.5rem 3.5rem;
+    width: 20%;
     color: white;
     box-shadow: 2px 5px 5px var(--PaleBlue);
-   
+    text-align: center;
+
 }
 
 main form #notify-btn:hover {
@@ -140,15 +133,18 @@ main form #notify-input.error {
 
 }
 
+
 #errorM {
     color: var(--light_red);
-    font-size: 16px;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -5rem;
+    left: 2rem ;
 }
 
 main .img-container {
-    width: 50%;
-    margin-top: 2rem;
-    margin: 2rem auto 0rem;
+    width: 70%;
+    margin: 4rem auto 0rem;
 }
 
 
@@ -164,6 +160,7 @@ main .img-container img {
     flex-direction: column;
     align-items: center;
 }
+
 ul {
     text-decoration: none;
     display: flex;
@@ -171,17 +168,15 @@ ul {
 }
 
 ul li {
-   
-    /* background-color: green; */
     padding: 0.2rem;
     margin-right: 1rem;
     color: var(--blue);
     margin-bottom: 1rem;
 }
 
-ul li :hover{
+ul li :hover {
     background-color: var(--blue);
-    color: white ;
+    color: white;
     padding: 0.2rem;
     border-radius: 50%;
     transition: 0.4s;
@@ -189,44 +184,29 @@ ul li :hover{
 
 /* Responsivenrss */
 
-@media (max-width:880px)
-{
-body {
-    padding: 1.2rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width:880px) {
+    
+    form {
+
+        flex-direction: column;
+    }
+
+    .control{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 
 
-}
+    main form #notify-btn {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    #errorM {
+        margin-top: 1rem;
+    }
 
-main form {
-
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    align-items: center;
-}
-
-main form .control {
-    width: auto;
-    text-align: center;
-}
-
-main form .balance {
-    width: auto;
-    text-align: center;
-}
-
-main form .balance #notify-btn {
-    box-shadow: none;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-main .img-container {
-    width: 80%;
-}
+    main .img-container {
+        width: 80%;
+    }
 
 }
